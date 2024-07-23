@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Ini Navigasi */
+.navi {
+  background: linear-gradient(#1a89c1, #7acbcf);
+  width: 100%;
+  height: 70px;
+  color: rgb(12, 12, 12);
+  position: fixed;
+  display: flex;
+}
+
+.logo {
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.menu {
+  margin-left: 600px;
+  padding-top: 27px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a:hover {
+  color: rgb(242, 234, 9);
+  font-style: italic;
+}
+
+/* Ini Banner */
+.banner {
+  background: linear-gradient(#7acbcf, #1a89c1);
+  height: 700px;
+  text-align: center;
+  color: black;
+}
+
+.banner img {
+  border-radius: 110px;
+  height: 200px;
+  border: 6px solid black;
+  margin-top: 90px;
+}
+
+.banner h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner button {
+  margin-top: 60px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+  color: black;
+}
+
+.banner p {
+  font-style: italic;
+}
+
+.banner button:hover {
+  background-color: #1a89c1;
+  border: 1px solid black;
+  color: black;
+}
+
+.banner h1 span::before {
+  content: "";
+  animation: gerak infinite 8s ease;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 60px;
+}
+
+@keyframes gerak {
+  0% {
+    content: "Welcome!";
+  }
+  50% {
+    content: "Saya M Zukhri Khamsya";
+  }
+  100% {
+    content: "Senang bisa berkenalan denganmu!";
+  }
+}
+
+/* Ini Pendidikan */
+.box-pen {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+  color: black;
+}
+
+.kotakpen {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sd,
+.smp,
+.sma,
+img {
+  height: 200px;
+}
+
+.sd,
+.smp,
+.sma {
+  width: 280px;
+  height: 320px;
+  background: #d4d4dd;
+  text-align: center;
+  padding: 30px 30px;
+  margin: 70px 20px 20px 55px;
+  border-radius: 10px;
+  float: left;
+}
+
+.sd:hover {
+  background: #1a89c1;
+}
+
+.smp:hover {
+  background-color: #1a89c1;
+}
+
+.sma:hover {
+  background-color: #1a89c1;
+}
+
+/*Ini SoftSkills */
+.box-skills {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  color: black;
+}
+
+.kotakskills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.MicrosoftWord,
+.MicrosoftExcel,
+.Canva,
+img {
+  height: 200px;
+}
+
+.MicrosoftWord,
+.MicrosoftExcel,
+.Canva {
+  width: 300px;
+  height: 400px;
+  background: #d4d4dd;
+  text-align: center;
+  padding: 30px 30px;
+  margin: 70px 20px 20px 55px;
+  border-radius: 10px;
+  float: left;
+}
+
+.MicrosoftWord:hover {
+  background: #1a89c1;
+}
+
+.MicrosoftExcel:hover {
+  background-color: #1a89c1;
+}
+
+.Canva:hover {
+  background-color: #1a89c1;
+}
+
+/*Tentang Saya*/
+
+.box-tentangsaya h1 {
+  color: black;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara gambar */
+}
+
+.gallery-item {
+  overflow: hidden; /* Agar gambar tidak melebihi kotaknya */
+  border-radius: 8px; /* Sudut bulat untuk kotak gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.gallery-item img {
+  width: 100%; /* Gambar mengisi tengah kotak */
+  height: auto; /* Menjaga proporsi gambar */
+  display: block; /* Agar gambar tidak membuat spasi ekstra */
+  border-radius: 8px; /* Sudut bulat untuk gambar */
+}
+
+/* Ini Kontak*/
+.box-kontak {
+  margin-top: 50px;
+}
+
+.box-kontak h1 {
+  color: black;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-kontak img {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 710px;
+}
+
+.box-kontak h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*footer*/
+.foot {
+  display: flex;
+  justify-content: space-around;
+  background-color: silver;
+  width: 99, 8%;
+  height: 30px;
+  padding: 3px;
+  margin: 50px auto 0px;
+}
